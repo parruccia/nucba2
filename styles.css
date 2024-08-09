@@ -1,0 +1,70 @@
+:root {
+    /* Colores Primarios */
+    --color-primario: #2c3e50; /* Azul oscuro, elegante y profesional */
+    --color-secundario: #ecf0f1; /* Gris claro, suave y neutral */
+
+    /* Colores de Resaltado */
+    --color-acento: #e74c3c; /* Rojo suave, para llamadas a la acción */
+    --color-enlace: #2980b9; /* Azul brillante, para enlaces y botones */
+
+    /* Colores de Fondo */
+    --fondo-principal: #ffffff; /* Blanco, para el fondo general */
+    --fondo-secundario: #f2f2f2; /* Gris claro, para secciones o bloques secundarios */
+
+    /* Colores de Texto */
+    --texto-principal: #2c3e50; /* Mismo azul oscuro que el primario, para el texto principal */
+    --texto-secundario: #7f8c8d; /* Gris medio, para subtítulos o textos menos importantes */
+    --texto-claro: #ffffff; /* Blanco, para textos sobre fondos oscuros */
+
+    /* Colores de Bordes y Líneas */
+    --borde: #bdc3c7; /* Gris suave, para bordes y líneas divisorias */
+
+    /* Colores de Fondo de Elementos Activos */
+    --fondo-activo: #34495e; /* Azul más oscuro, para elementos activos como botones al pasar el ratón */
+}
+
+
+/*================RESET================*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: var(--color-primario);
+}
+
+header {
+    background-color: var(--color-secundario);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    position: fixed;
+    width: 100%;
+
+}
+
+img {
+height: 100px;
+width: 100px;
+}
+
+.navbar, .list  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.list {
+    gap:30px; 
+}
+
+.list a{
+    color: var(--color-enlace);
+    font-family: poppins, sans-serif;
+}
